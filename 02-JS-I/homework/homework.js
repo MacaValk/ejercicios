@@ -63,7 +63,7 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
- if (y === x) {return true; }
+ if (y === x) {true; }
 
     else { return false; } 
   
@@ -86,9 +86,9 @@ function menosQueNoventa(num) {
   }
 
   if (num < 90) {
-     true;
+      true;
   } else { 
-     false;
+     return false;
   }
 
 function mayorQueCincuenta(num) {
@@ -97,9 +97,9 @@ function mayorQueCincuenta(num) {
   // Tu código:
  } 
 if (num > 50) {
- true;
+ return true;
 } else { 
- false;
+ return false;
 }
 
 function obtenerResto(x, y) {
@@ -114,9 +114,9 @@ function esPar(num) {
   // Tu código:
   }
   if( num % 2 === 0) {
-     true;
+     return true;
   } else {
-    false;
+    return false;
   }
 
 function esImpar(num) {
@@ -125,9 +125,9 @@ function esImpar(num) {
   // Tu código:  
 }
   if( num % 2 === 1) {
-     true;
+     return true;
   } else {
-     false;
+     return false;
   }
 
 

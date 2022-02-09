@@ -26,12 +26,16 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = []
-  for (var i=0; i< array.length; i++){
-    nuevoArray[i] = array[i]+1
+
+    var nuevoArray = [];
+  for(var i = 0; i < array.length; i++) {
+    nuevoArray[i] = array[i] + 1;
   }
-  return nuevo;
+
+  return nuevoArray;
+
 }
+
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -40,7 +44,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Tu código:
 
   array.push(elemento);
-  retun array;
+   return array;
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -90,8 +94,6 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-
-  DUDA
  var promedio = 0
   for (let i = 0 ; i < resultadosTest.length; i++){
     promedio = (promedio + resultadosTest [i])
@@ -105,8 +107,6 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-
-DUDAS!!!
 
  var maximo = numeros[0];
   for(var i = 1; i < numeros.length; i++) {
@@ -123,25 +123,24 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   
-  if (arguments.lenght === 0) return 0 
-  var acc = 1
-for (let i = 0; i < arguments.length; i++)
-  acc = acc * arguments [i]
-} 
-  return contador; 
+   if(arguments.length < 1) return 0;
+  var total = 1;
+  for(var i = 0; i < arguments.length; i++) {
+    total = total * arguments[i];
+  }
+  return total;
 }
-
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí 
- var contador = 0
- for (let i=0; i < arreglo.length; i++) {
-  if (arreglo[i] > 18) {
-    contador= contador +1; 
+ let contador = 0;
+  for (let i = 0; i < arreglo.length ; i++) {
+    if(arreglo[i] > 19){
+      contador++
+    }
   }
- } return contador;
-
+  return contador
 }
 
 
